@@ -1,8 +1,12 @@
-
+import java.util.Scanner;
 public class Armstrong
 {
     public static void main(String args[]){
-    int sum=0,i=154;
+    int sum=0,i;
+    System.out.println("Enter the value");
+    Scanner sc = new Scanner(System.in);
+    i = sc.nextInt();
+    sc.close();
     int temp = i;
     while(i>0){
     int r = i%10;
@@ -10,6 +14,10 @@ public class Armstrong
     sum= sum + f;
     i=i/10;
 }
-    System.out.println(sum);
+if(temp == sum){
+    System.out.println("Palindrome");
     }
+    else{
+    System.out.println("Not a Palindrome");
 }
+}}
