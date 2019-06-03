@@ -10,15 +10,16 @@ public class Selection_sort
      static void bubbleSort(int[] arr) {  
         int n = arr.length;  
         int temp = 0;  
-         for(int i=0; i < n; i++){  
-                 for(int j=i; j < n; j++){  
+         for(int i=0; i < n-1; i++){  
+                 for(int j=i+1; j < n; j++){  
                           if(arr[i] > arr[j]){  
                                  //swap elements  
                                  temp = arr[j];  
                                  arr[j] = arr[i];  
                                  arr[i] = temp;  
                          }  
-                          
+                          // first find the biggest number at 
+                          //first position then second and on and on
                  }  
          }  }
     
