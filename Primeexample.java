@@ -15,18 +15,22 @@ public class Primeexample
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         sc.close();
-        y=x/2;
+        y=x/2; 
+        int val=0;
         if(x==0 || x==1){
             System.out.println("Not a Prime no.");
         }
-        int i;
-        for(i=2;i<y;i++){
+        for(int i=2;i<y;i++){
         if(x%i==0){
-        System.out.println("Not a Prime no.");
-
+         val++;
+         break;
+        }
+        }
+        if(val==0){
+            System.out.println("Prime no.");
         }
         else{
-        System.out.println("A Prime no.");
-}}
+            System.out.println("Not a Prime no.");
+        }
     }
 }
